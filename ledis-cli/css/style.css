@@ -1,0 +1,21 @@
+body{
+	background-color: black;
+	color: white;
+}
+
+#log{
+	margin-top: 20px;
+}
+
+#terminal{
+	white-space: nowrap;
+}
+
+#command{
+	background-color: black;
+	color: white;
+	outline: none;
+	border: none;
+	width: 100%;
+	height: 20px;
+}
