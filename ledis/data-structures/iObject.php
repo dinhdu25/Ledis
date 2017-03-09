@@ -17,8 +17,12 @@ class iObject{
 	
 	//query timeout
 	function ttl(){
-		$date = new DateTime();
-		$timeout = $this->_timestamp + $this->_seconds - $date->getTimestamp() ;
-		return $timeout;
+		if($this->_seconds>0){
+			$date = new DateTime();
+			$timeout = $this->_timestamp + $this->_seconds - $date->getTimestamp() ;
+			return $timeout;
+		}
+		else 
+			return 0;
 	}
 }
